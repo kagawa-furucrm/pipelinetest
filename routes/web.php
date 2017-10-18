@@ -18,10 +18,10 @@ Route::get('/','PostController@index');
 // check for logged in user
 Route::get('/home',['as' => 'home', 'uses' => 'PostController@index']);
 //authentication
-Route::controllers([
+/*Route::controllers([
  'auth' => 'Auth\AuthController',
  'password' => 'Auth\PasswordController',
-]);
+]);*/
 Route::group(['middleware' => ['auth']], function()
 {
  // show new post form
