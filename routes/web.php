@@ -13,7 +13,8 @@
 
 Route::get('/','PostController@index');
 
-//Auth::routes();
+Auth::routes();
+
 //Route::get('/home', 'HomeController@index')->name('home');
 // check for logged in user
 Route::get('/home',['as' => 'home', 'uses' => 'PostController@index']);
