@@ -11,14 +11,18 @@
 |
 */
 
-Route::get('/', function () {
-    return view('home');
-});
+Route::get('/','PostController@index');
 
-Auth::routes();
+//Auth::routes();
 
-Route::get('/home', 'HomeController@index')->name('home');
+//Route::get('/home', 'HomeController@index')->name('home');
 // check for logged in user
+Route::get('/home',['as' => 'home', 'uses' => 'PostController@index']);
+//authentication
+Route::controllers([
+ 'auth' => 'Auth\AuthController',
+ 'password' => 'Auth\PasswordController',
+]);
 Route::group(['middleware' => ['auth']], function()
 {
  // show new post form
