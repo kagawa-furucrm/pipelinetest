@@ -5,7 +5,10 @@ use App\User;
 use App\Posts;
 use Illuminate\Http\Request;
 class UserController extends Controller {
-  /*
+  public function __construct(){
+    $this->middleware('auth');
+  }
+   /*
    * Display active posts of a particular user
    * 
    * @param int $id

@@ -13,7 +13,7 @@
 
 Route::get('/','PostController@index');
 
-Auth::routes();
+//Auth::routes();
 
 //Route::get('/home', 'HomeController@index')->name('home');
 // check for logged in user
@@ -23,8 +23,8 @@ Route::get('/home',['as' => 'home', 'uses' => 'PostController@index']);
  'auth' => 'Auth\AuthController',
  'password' => 'Auth\PasswordController',
 ]);*/
-Route::group(['middleware' => ['auth']], function()
-{
+//Route::group(['middleware' => ['auth']], function()
+//{
  // show new post form
  Route::get('new-post','PostController@create');
  // save new post
@@ -43,7 +43,7 @@ Route::group(['middleware' => ['auth']], function()
  Route::post('comment/add','CommentController@store');
  // delete comment
  Route::post('comment/delete/{id}','CommentController@distroy');
-});
+//});
 //users profile
 Route::get('user/{id}','UserController@profile')->where('id', '[0-9]+');
 // display list of posts
