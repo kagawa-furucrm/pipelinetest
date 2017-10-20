@@ -100,7 +100,7 @@
       </div>
       <div class="row">
         <div class="col-md-10 col-md-offset-1">
-          <p>Copyright © 2017 | <a href="http://www.mulodo.co.jp/about/company.html">Mulodo Inc.</a></p>
+          <p>Copyright © 2017 | <a href="http://www.mulodo.co.jp/about/company.html">香川の散歩</a></p>
         </div>
       </div>
     </div>
