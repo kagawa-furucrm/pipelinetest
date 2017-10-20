@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Blog Demo | Find All Together</title>
+    <title>Mulodo Technical Blogs | Mulodo Inc.</title>
     <link href="{{ asset('/css/app.css') }}" rel="stylesheet">
     <!-- Fonts -->
     <link href='//fonts.googleapis.com/css?family=Roboto:400,300' rel='stylesheet' type='text/css'>
@@ -36,10 +36,10 @@
           <ul class="nav navbar-nav navbar-right">
             @if (Auth::guest())
             <li>
-              <a href="{{ url('/auth/login') }}">Login</a>
+              <a href="{{ url('/login') }}">Login</a>
             </li>
             <li>
-              <a href="{{ url('/auth/register') }}">Register</a>
+              <a href="{{ url('/register') }}">Register</a>
             </li>
             @else
             <li class="dropdown">
@@ -57,7 +57,7 @@
                   <a href="{{ url('/user/'.Auth::id()) }}">My Profile</a>
                 </li>
                 <li>
-                  <a href="{{ url('/auth/logout') }}">Logout</a>
+                  <a href="{{ url('/logout') }}">Logout</a>
                 </li>
               </ul>
             </li>
