@@ -25,7 +25,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="http://www.findalltogether.com">Find All Together</a>
+          <a class="navbar-brand" href="http://www.mulodo.co.jp/about/company.html">Mulodo Technical Blogs</a>
         </div>
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
           <ul class="nav navbar-nav">
@@ -100,7 +100,7 @@
       </div>
       <div class="row">
         <div class="col-md-10 col-md-offset-1">
-          <p>Copyright © 2015 | <a href="http://www.findalltogether.com">Find All Together</a></p>
+          <p>Copyright © 2017 | <a href="http://www.mulodo.co.jp/about/company.html">Mulodo Inc.</a></p>
         </div>
       </div>
     </div>
