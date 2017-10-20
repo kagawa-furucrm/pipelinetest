@@ -5,14 +5,13 @@ namespace App;
 use Illuminate\Notifications\Notifiable;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Database\Eloquent\Model;
-use Illuminate\Auth\Passwords\CanResetPassword;
-use Illuminate\Contracts\Auth\Authenticatable as AuthenticatableContract;
-use Illuminate\Contracts\Auth\CanResetPassword as CanResetPasswordContract;
+//use Illuminate\Auth\Passwords\CanResetPassword;
+//use Illuminate\Contracts\Auth\Authenticatable as AuthenticatableContract;
+//use Illuminate\Contracts\Auth\CanResetPassword as CanResetPasswordContract;
 
 
-class User extends Model implements AuthenticatableContract,CanResetPasswordContract
-{
-    use Notifiable,Authenticatable,CanResetPassword;
+class User extends Authenticatable{
+    use Notifiable;
      /**
      * The database table used by the model.
      *
