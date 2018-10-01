@@ -21,6 +21,9 @@ class CreateUsersTable extends Migration
 	    $table->enum('role',['admin','author','subscriber'])->default('author'); 	
             $table->rememberToken();
             $table->timestamps();
+	    $table->bigInteger('user_id');
+	    $table->string('provider_name');
+	    $table->string('provider_id');	
         });
     }
 
