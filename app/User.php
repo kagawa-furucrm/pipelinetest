@@ -26,6 +26,9 @@ class User extends Authenticatable{
     protected $fillable = [
         'name', 'email', 'password',
     ];
+  public function accounts(){
+    return $this->hasMany('App\LinkedSocialAccount');
+  }
     // user has many posts
   public function posts()
   {
